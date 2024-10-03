@@ -13,8 +13,6 @@ global user minyangWin;
 /*minyangWin  */
 if strmatch("$user","minyangWin"){;
 global my_projdir "C:/Users/Min-Yang.Lee/Documents/READ-SSB-CostofClimateChange";
-global oracle_cxn " $mysole_conn lower";
-
 };
 
 
