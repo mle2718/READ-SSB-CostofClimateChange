@@ -28,10 +28,10 @@ add the following 2 lines
 
 ```
 global user minyangWin
-global aceprice full\path\to\folder_setup_globals.do 
+global CostofClimateChange full\path\to\folder_setup_globals.do 
 ```
 2. Restart stata
-3. type  "do $aceprice"
+3. type  "do $CostofClimateChange"
 
 Everything is set up and ready to go.
 
@@ -47,15 +47,8 @@ you will have to type in the full path for the second line.
 
 
 ## user written code stata code
-As far as I can tell, we need these user written stata commands
+As far as I can tell, there are not required user written stata commands
 <!---
-1. renvarlab
-1. egenmore
-1. tabcount
-1. ineqdeco, ineqdec0
-1. vioplot
-1. renvars
-1. mdesc
 --->
 
 # R users
@@ -72,7 +65,7 @@ my_projdir<-"path/to/project/directory"
 A pair of small do files to set up folders and then make stata aware of folders.
 
 ## data_extraction_processing
-There is sample code in "data_extraction_processing" that you can use to get deflators.  This can be done with "/data_extraction_processing/wrapper_external.do".  You'll need an API key to import fred.  Extracting OES and QCEW data is really slow. 
+There is sample code in "data_extraction_processing" that you can use to get deflators or other statistics available from the St. Louis Federal reserve.  You'll need an API key to import fred.  Extracting OES and QCEW data is really slow. 
 
 ## summary stats
 
