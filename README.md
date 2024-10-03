@@ -1,21 +1,6 @@
 # Project Template
 
-A small repository that will help you set up an organized project. There is also a tiny bit of sample code about how to get data off the NEFSC oracle servers.  
-
-1. A folder structure and some utilities that will (hopefully) help you keep things organized
-1. Getting Data
-    1. Sample code for extracting data from oracle using stata.
-    1. Sample code for extracting data from oracle using R with ROracle and RODBC.
-    1. Sample code for extracting data from the St. Louis Fed using stata. 
-    1. If you need to extract data from oracle on one of the NEFSC servers, look [here](https://github.com/NEFSC/READ-SSB-LEE-On-the-servers)
-1. a class file (ajae_mod.csl) and a latex preamble (preamble-latex.tex) that might make your life easier if you are using markdown to make pdfs.
-
-# How to use
-
-1.  Create a [new repository](/images/new_repository.jpg) using this as a [template](/images/from_template.jpg).
-2.  Clone it the new repository locally, using Github Desktop, Rstudio, or something else.
-3.  Delete the parts of this readme that are no longer needed.
-4.  If R and Rstudio is part of your workflow, associate the directory with a project. File--> New Project--> Existing Directory.
+A repository to hold NEFSC code for extracting data for the Cost of Climate Change project.  
 
 # Overview and Folder structure
 
@@ -42,9 +27,9 @@ This repository is a scientific product and is not official communication of the
 
 
 1. who worked on this project:  Min-Yang Lee
-1. when this project was created: Jan, 2021 
-1. what the project does: Helps people get organized.  Shows how to get data from NEFSC oracle 
-1. why the project is useful:  Helps people get organized.  Shows how to get data from NEFSC oracle 
+1. when this project was created: October, 2024 
+1. what the project does: Extract data for the Cost of Climate Change project 
+1. why the project is useful:  Extract data for the Cost of Climate Change project 
 1. how users can get started with the project: Download and follow the readme
 1. where users can get help with your project:  email me or open an issue
 1. who maintains and contributes to the project. Min-Yang
