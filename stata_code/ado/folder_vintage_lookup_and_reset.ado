@@ -9,10 +9,15 @@ This program will pick through the subfolders in data_main and lookup the most r
 */
 cap program drop folder_vintage_lookup_and_reset
 program folder_vintage_lookup_and_reset
+syntax [, search_folder(string)]
+
+if "`search_folder'" == "" {
+	local search_folder="$data_main"
+}
 
 	/* Look through the data_main folder to see what data vintages are available */
 
-	local data_vintage : dir "${data_main}" dirs "*" 
+	local data_vintage : dir "`search_folder'" dirs "*" 
 	
 	/* look through all the files and pick out the unique vintages, which are in the last 10 characters */
 	/* Use a regular expression, to only keep things that end in YYYY_MM_DD*/
