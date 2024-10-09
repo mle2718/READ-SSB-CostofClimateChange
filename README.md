@@ -2,17 +2,32 @@
 
 A repository to hold NEFSC code for extracting data for the Cost of Climate Change project.  
 
-# Overview and Folder structure
+# Running code
 
-This is mostly borrowed from the world bank's EDB. https://dimewiki.worldbank.org/wiki/Stata_Coding_Practices
-Please use forward slashes (that is C:/path/to/your/folder) instead of backslashes for unix/mac compatability. I'm forgetful about this. 
+1. Open up stata and the stata do file called ``/stata_code/project_logistics/folder_setup_globals.do``
+2. Make a copy of these lines, replace "minyangWin" with your username and change the ``my_projdir`` global to point to your project directory 
 
-I keep each project in a separate folder.  The full path to ``stata_code/project_logistics/folder_setup_globals.do``is stored as the macro ``CostofClimateChange`` in stata's startup profile.do.  This lets me start working on any of my projects by opening stata and typing: 
 ```
-do $CostofClimateChange
-```
-Rstudio users using projects don't have to do this step.  But it is convenient to read paths into variables by using the "R_paths_libraries.R" file.
+/*minyangWin  */
+if strmatch("$user","minyangWin"){;
+global my_projdir "C:/Users/Min-Yang.Lee/Documents/READ-SSB-CostofClimateChange";
+};```
+to your project directory. 
 
+Here are two ways to be ready to run the project.
+
+### Automatic
+1.  Modify or create your profile.do file that stata automatically runs on startup.  I've put mine in c:/ado/profile.do.  
+add the following 2 lines
+
+```
+global user your_user_name
+global CostofClimateChange full\path\to\folder_setup_globals.do 
+```
+2. Restart stata
+3. type  "do $CostofClimateChange"
+
+Everything is set up and ready to go.
 
 # On passwords and other confidential information
 
