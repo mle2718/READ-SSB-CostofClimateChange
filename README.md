@@ -7,9 +7,9 @@ A repository to hold NEFSC code for extracting data for the Cost of Climate Chan
 This is mostly borrowed from the world bank's EDB. https://dimewiki.worldbank.org/wiki/Stata_Coding_Practices
 Please use forward slashes (that is C:/path/to/your/folder) instead of backslashes for unix/mac compatability. I'm forgetful about this. 
 
-I keep each project in a separate folder.  A stata do file containing folder names get stored as a macro in stata's startup profile.do.  This lets me start working on any of my projects by opening stata and typing: 
+I keep each project in a separate folder.  The full path to ``stata_code/project_logistics/folder_setup_globals.do``is stored as the macro ``CostofClimateChange`` in stata's startup profile.do.  This lets me start working on any of my projects by opening stata and typing: 
 ```
-do $my_project_name
+do $CostofClimateChange
 ```
 Rstudio users using projects don't have to do this step.  But it is convenient to read paths into variables by using the "R_paths_libraries.R" file.
 
