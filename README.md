@@ -11,7 +11,8 @@ A repository to hold NEFSC code for extracting data for the Cost of Climate Chan
 /*minyangWin  */
 if strmatch("$user","minyangWin"){;
 global my_projdir "C:/Users/Min-Yang.Lee/Documents/READ-SSB-CostofClimateChange";
-};```
+};
+```
 to your project directory. 
 
 Here are two ways to be ready to run the project.
@@ -33,7 +34,7 @@ Everything is set up and ready to go.
 
 Basically, you will want to store them in a place that does not get uploaded to github. 
 
-For stata users, there is a description [here](/documentation/project_logistics.md). 
+For stata users, ``profile.do`` is a good place to store them.
 
 For R users, try storing it in [.Rprofile](/R_code/project_logistics/.Rprofile_sample). Store you API keys or Personal Access Tokens in [.Renviron](/R_code/project_logistics/.Renviron_sample)
 
